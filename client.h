@@ -1,8 +1,7 @@
 /*
  * client.h
+ * Author: Eamon Dysinger
  *
- *  Created on: Feb 4, 2016
- *      Author: savage
  */
 
 #ifndef CLIENT_H_
@@ -23,10 +22,11 @@
 #define MAXRCVLEN 1024 // the max length of buffer that the client will read from the user
 #define USER_INPUT_BLANK 0
 #define BUFFER_SIZE 1024
+#define ERROR -1
 
 // function prototypes
-// void clientInit(char *buffer, struct sockaddr_in *server, char * argv);
 int getUserInput(char* buffer);
+void padMessageSize(char * str, int bufferSize);
 
 #endif /* CLIENT_H_ */
 

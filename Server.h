@@ -1,8 +1,6 @@
 /*
  * Server.h
- *
- *  Created on: Feb 5, 2016
- *      Author: Eamon Dysinger
+ * Author: Eamon Dysinger
  */
 
 #ifndef SERVER_H_
@@ -20,7 +18,7 @@
 #include <string.h>
 
 //enums
-#define BUFFER_SIZE 1024 // the max length of buffer that the client will read from the user
+#define BUFFER_SIZE 1056 // the max length of buffer that the client will read from the user plus 32 bits for the length
 #define USER_INPUT_BLANK 0
 
 
