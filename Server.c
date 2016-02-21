@@ -11,7 +11,7 @@
 int main(int argc, char* argv[]){
 	//variables
 	char* buffer[BUFFER_SIZE];         // char buffer to read up to 1024 characters from the input line
-	int len;               // the size of the buffer read from the user
+	int len;                           // the size of the buffer read from the user
 	int serverSocket, clientSocket;
 	int optSuccess;
 	uint32_t bufferSize, msgLength;
